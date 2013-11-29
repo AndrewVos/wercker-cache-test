@@ -1,0 +1,9 @@
+box: wercker-labs/docker
+box-type: ami
+build:
+    steps:
+        - script:
+            name: test
+            code: |
+              ls $WERCKER_CACHE_DIR
+              touch $WERCKER_CACHE_DIR/file
