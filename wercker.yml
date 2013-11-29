@@ -5,5 +5,5 @@ build:
         - script:
             name: test
             code: |
-              ls $WERCKER_CACHE_DIR
-              touch $WERCKER_CACHE_DIR/file
+              ls /cache
+              touch /cache/file
